@@ -1,0 +1,2 @@
+rootProject.name = "MADL Ex - 1"
+include ':app'

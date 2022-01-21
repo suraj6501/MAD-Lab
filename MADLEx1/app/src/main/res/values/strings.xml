@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MADL Ex - 1</string>
+    <string name="hey_this_is_my_1st_madl_exercise">Hey this is my 1st MADL Exercise.</string>
+    <string name="increase_the_font_size">Increase the Font size</string>
+    <string name="change_the_color">Change the Color</string>
+    <string name="reset">Reset</string>
+</resources>
