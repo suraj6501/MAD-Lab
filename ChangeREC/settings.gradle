@@ -1,0 +1,2 @@
+rootProject.name = "ChangeREC"
+include ':app'
