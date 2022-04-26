@@ -2,6 +2,7 @@ package com.example.validation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,9 +22,16 @@ public class MainActivity extends AppCompatActivity {
         btnValidate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                if(etUname.getText().toString().matches("[a-zA-Z]+") && etPwd.getText().toString().matches("[0-9]+") && etPwd.getText().toString().length() == 4) {
+//                    Toast t = Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT);
+//                    t.show();
+//                } else {
+//                    Toast t = Toast.makeText(getApplicationContext(), "Please re-check your username or password.", Toast.LENGTH_SHORT);
+//                    t.show();
+//                }
                 if(etUname.getText().toString().matches("[a-zA-Z]+") && etPwd.getText().toString().matches("[0-9]+") && etPwd.getText().toString().length() == 4) {
-                    Toast t = Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT);
-                    t.show();
+                   Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                   startActivity(intent);
                 } else {
                     Toast t = Toast.makeText(getApplicationContext(), "Please re-check your username or password.", Toast.LENGTH_SHORT);
                     t.show();
